@@ -1,0 +1,91 @@
+{
+  "build": "LevelUp Wallpapers Individual Art Build",
+  "count": 12,
+  "download_behavior": "PNG exports preserve original source width and height",
+  "assets": [
+    {
+      "file": "01_neon_metropolis.jpg",
+      "source": "a_cinematic_ultra_detailed_cyberpunk_city_night_s.png",
+      "width": 941,
+      "height": 1672,
+      "kb": 857
+    },
+    {
+      "file": "02_rain_racer.jpg",
+      "source": "a_cinematic_ultra_detailed_neon_cyberpunk_night.png",
+      "width": 841,
+      "height": 1870,
+      "kb": 656
+    },
+    {
+      "file": "03_neon_motorcycle.jpg",
+      "source": "a_dramatic_cinematic_cyberpunk_night_cityscape_ov.png",
+      "width": 941,
+      "height": 1672,
+      "kb": 744
+    },
+    {
+      "file": "04_bloodmoon_ronin.jpg",
+      "source": "a_dramatic_cinematic_nighttime_scene_a_lone_samur.png",
+      "width": 941,
+      "height": 1672,
+      "kb": 677
+    },
+    {
+      "file": "05_inferno_dragon.jpg",
+      "source": "epic_high_detail_fantasy_scene_a_colossal_menaci.png",
+      "width": 941,
+      "height": 1672,
+      "kb": 856
+    },
+    {
+      "file": "06_ringed_planet_explorer.jpg",
+      "source": "a_dramatic_sci_fi_space_scene_a_wide_cinematic.png",
+      "width": 941,
+      "height": 1672,
+      "kb": 787
+    },
+    {
+      "file": "07_armored_vanguard.jpg",
+      "source": "epic_cinematic_landscape_scene_ultra_detailed_rea.png",
+      "width": 941,
+      "height": 1672,
+      "kb": 741
+    },
+    {
+      "file": "08_moonlit_castle.jpg",
+      "source": "a_dramatic_epic_fantasy_landscape_scene_at_night.png",
+      "width": 941,
+      "height": 1672,
+      "kb": 729
+    },
+    {
+      "file": "09_winter_wolf.jpg",
+      "source": "a_dramatic_cinematic_high_detail_fantasy_realist.png",
+      "width": 841,
+      "height": 1870,
+      "kb": 589
+    },
+    {
+      "file": "10_jungle_tiger.jpg",
+      "source": "a_dramatic_cinematic_wildlife_scene_a_close_low.png",
+      "width": 841,
+      "height": 1870,
+      "kb": 673
+    },
+    {
+      "file": "11_aurora_cabin.jpg",
+      "source": "a_dramatic_high_detail_cinematic_night_landscape.png",
+      "width": 841,
+      "height": 1870,
+      "kb": 794
+    },
+    {
+      "file": "12_cyberpunk_overlook.jpg",
+      "source": "a_dramatic_cyberpunk_sci_fi_scene_overall_a_vert.png",
+      "width": 841,
+      "height": 1870,
+      "kb": 810
+    }
+  ]
+}
