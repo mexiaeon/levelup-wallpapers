@@ -1,34 +1,16 @@
-# LevelUp Wallpapers — Individual Art Build
+# LevelUp Wallpapers — GitHub Pages Upload Fix
 
-This build replaces the earlier collage-derived wallpaper crops with **12 standalone AI-generated portrait artworks**. Each artwork is a separate image file, not cropped out of a collage.
+IMPORTANT: Every file in this package is at the same level. This fixes the previous issue where the published HTML referenced a `wallpapers/` folder that was not present in the repository.
 
-## Artwork included
-- Neon Metropolis
-- Rain Racer
-- Neon Motorcycle
-- Bloodmoon Ronin
-- Inferno Dragon
-- Ringed Planet
-- Armored Vanguard
-- Moonlit Castle
-- Winter Wolf
-- Jungle Tiger
-- Aurora Cabin
-- Cyberpunk Overlook
+## Upload these files
+Extract this ZIP, select ALL contents, and upload/commit them in the ROOT of `mexiaeon/levelup-wallpapers` (not inside a subfolder). This includes:
+- `index.html`
+- `manifest.webmanifest`
+- `sw.js`
+- `icon-192.png` and `icon-512.png`
+- all 12 `.jpg` wallpaper files
+- `.nojekyll`, `README.md`, and `ARTWORK_MANIFEST.json`
 
-## Image handling
-- Source images retain their original generated dimensions; this build does not upscale them or stretch downloads to a fixed canvas size.
-- The app gallery uses local image files in `wallpapers/`.
-- Selecting **Download art** exports a PNG using the exact pixel width and height of the selected source image. The downloaded filename includes those dimensions.
-- JPG assets are stored at high quality to keep the website package smaller and loading faster.
-- There are 12 wallpapers in this quality-focused build. The former 25-image collage-derived pack is not included as wallpaper assets.
+After committing, open your GitHub Pages site in a private/incognito window or hard-refresh with Ctrl+F5 so the old cached page doesn't appear.
 
-## Run and test
-1. Extract the ZIP.
-2. Open `index.html` in Chrome to test the gallery and PNG downloads.
-3. For install/offline testing, serve the folder via HTTPS or localhost; `file://` URLs do not fully support PWA installation.
-
-With Python installed, open a terminal in this folder and run `python -m http.server 8000`, then visit `http://localhost:8000`.
-
-## Launch notes
-This is an installable web app (PWA) prototype, not a native Android app; there is no live AdMob integration or ad revenue yet. For commercial use, review every image for unintended recognizable logos or copyrighted characters, and verify applicable image-generation commercial-use terms before release.
+This is an installable web-app prototype, not a native Android app, and advertising is not integrated yet.

@@ -6,7 +6,7 @@
 <meta name="theme-color" content="#090b12">
 <meta name="description" content="Discover original console-inspired gaming wallpapers for your phone.">
 <link rel="manifest" href="manifest.webmanifest">
-<link rel="icon" href="icons/icon-192.png">
+<link rel="icon" href="icon-192.png">
 <title>LevelUp Wallpapers</title>
 <style>
 :root{color-scheme:dark;--bg:#090b12;--panel:#121622;--text:#f4f6ff;--muted:#9ba5bc;--blue:#5a8cff;--violet:#9d6bff;--line:#242b3b}
@@ -55,18 +55,18 @@ header{display:flex;align-items:center;justify-content:space-between;padding:18p
 <div class="modal" id="modal"><div class="sheet"><div id="detailArt" class="sheet-art art guardian"></div><h2 id="detailTitle">Wallpaper</h2><p id="detailMeta">Original portrait artwork • Phone wallpaper</p><div class="actions"><button id="saveDetail">♡ Save</button><button class="primary" id="downloadBtn">Download art</button></div><p>Downloads are exported as PNG at each source image's original pixel dimensions.</p><div style="text-align:right;margin-top:12px"><button id="closeModal" style="border:0;background:none;color:#aab4c9;padding:8px">Close ✕</button></div></div></div><div class="toast" id="toast" role="status" aria-live="polite"></div>
 <script>
 const wallpapers=[
-{id:1,title:'Neon Metropolis',cat:'Cyberpunk',style:'photo',tag:'FEATURED',desc:'A hooded traveler overlooks a moonlit neon megacity.',image:'wallpapers/01_neon_metropolis.jpg'},
-{id:2,title:'Rain Racer',cat:'Racing',style:'photo',tag:'RACING',desc:'A sleek supercar cuts through a rain-soaked neon highway.',image:'wallpapers/02_rain_racer.jpg'},
-{id:3,title:'Neon Motorcycle',cat:'Cyberpunk',style:'photo',tag:'NEW',desc:'A futuristic rider surveys a glowing city skyline.',image:'wallpapers/03_neon_motorcycle.jpg'},
-{id:4,title:'Bloodmoon Ronin',cat:'Fantasy',style:'photo',tag:'FANTASY',desc:'A lone ronin faces a crimson moon above misty temples.',image:'wallpapers/04_bloodmoon_ronin.jpg'},
-{id:5,title:'Inferno Dragon',cat:'Fantasy',style:'photo',tag:'FANTASY',desc:'A colossal dragon towers above a lava-lit fortress.',image:'wallpapers/05_inferno_dragon.jpg'},
-{id:6,title:'Ringed Planet',cat:'Sci-Fi',style:'photo',tag:'SCI-FI',desc:'An astronaut explores the ridges below a giant ringed planet.',image:'wallpapers/06_ringed_planet_explorer.jpg'},
-{id:7,title:'Armored Vanguard',cat:'Sci-Fi',style:'photo',tag:'NEW',desc:'A battle-worn armored explorer surveys a mountain valley at sunrise.',image:'wallpapers/07_armored_vanguard.jpg'},
-{id:8,title:'Moonlit Castle',cat:'Fantasy',style:'photo',tag:'FANTASY',desc:'A gothic castle rises above a moonlit frozen valley.',image:'wallpapers/08_moonlit_castle.jpg'},
-{id:9,title:'Winter Wolf',cat:'Nature',style:'photo',tag:'POPULAR',desc:'A black wolf stands beneath the full moon in a snowy range.',image:'wallpapers/09_winter_wolf.jpg'},
-{id:10,title:'Jungle Tiger',cat:'Nature',style:'photo',tag:'WILDLIFE',desc:'A tiger stalks through a dark, rain-slick jungle.',image:'wallpapers/10_jungle_tiger.jpg'},
-{id:11,title:'Aurora Cabin',cat:'Nature',style:'photo',tag:'NATURE',desc:'An alpine cabin glows beneath a turquoise aurora.',image:'wallpapers/11_aurora_cabin.jpg'},
-{id:12,title:'Cyberpunk Overlook',cat:'Cyberpunk',style:'photo',tag:'NEW',desc:'A lone cyberpunk watches the rain-lit skyline from above.',image:'wallpapers/12_cyberpunk_overlook.jpg'}
+{id:1,title:'Neon Metropolis',cat:'Cyberpunk',style:'photo',tag:'FEATURED',desc:'A hooded traveler overlooks a moonlit neon megacity.',image:'01_neon_metropolis.jpg'},
+{id:2,title:'Rain Racer',cat:'Racing',style:'photo',tag:'RACING',desc:'A sleek supercar cuts through a rain-soaked neon highway.',image:'02_rain_racer.jpg'},
+{id:3,title:'Neon Motorcycle',cat:'Cyberpunk',style:'photo',tag:'NEW',desc:'A futuristic rider surveys a glowing city skyline.',image:'03_neon_motorcycle.jpg'},
+{id:4,title:'Bloodmoon Ronin',cat:'Fantasy',style:'photo',tag:'FANTASY',desc:'A lone ronin faces a crimson moon above misty temples.',image:'04_bloodmoon_ronin.jpg'},
+{id:5,title:'Inferno Dragon',cat:'Fantasy',style:'photo',tag:'FANTASY',desc:'A colossal dragon towers above a lava-lit fortress.',image:'05_inferno_dragon.jpg'},
+{id:6,title:'Ringed Planet',cat:'Sci-Fi',style:'photo',tag:'SCI-FI',desc:'An astronaut explores the ridges below a giant ringed planet.',image:'06_ringed_planet_explorer.jpg'},
+{id:7,title:'Armored Vanguard',cat:'Sci-Fi',style:'photo',tag:'NEW',desc:'A battle-worn armored explorer surveys a mountain valley at sunrise.',image:'07_armored_vanguard.jpg'},
+{id:8,title:'Moonlit Castle',cat:'Fantasy',style:'photo',tag:'FANTASY',desc:'A gothic castle rises above a moonlit frozen valley.',image:'08_moonlit_castle.jpg'},
+{id:9,title:'Winter Wolf',cat:'Nature',style:'photo',tag:'POPULAR',desc:'A black wolf stands beneath the full moon in a snowy range.',image:'09_winter_wolf.jpg'},
+{id:10,title:'Jungle Tiger',cat:'Nature',style:'photo',tag:'WILDLIFE',desc:'A tiger stalks through a dark, rain-slick jungle.',image:'10_jungle_tiger.jpg'},
+{id:11,title:'Aurora Cabin',cat:'Nature',style:'photo',tag:'NATURE',desc:'An alpine cabin glows beneath a turquoise aurora.',image:'11_aurora_cabin.jpg'},
+{id:12,title:'Cyberpunk Overlook',cat:'Cyberpunk',style:'photo',tag:'NEW',desc:'A lone cyberpunk watches the rain-lit skyline from above.',image:'12_cyberpunk_overlook.jpg'}
 ];
 let category='All',page='discover',selected=null,installPrompt=null;
 const gallery=document.getElementById('gallery');
